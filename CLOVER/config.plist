@@ -14,7 +14,13 @@
 			<dict>
 				<key>AddDTGP</key>
 				<false/>
+				<key>AddHDMI</key>
+				<true/>
 				<key>AddPNLF</key>
+				<true/>
+				<key>FixDisplay</key>
+				<true/>
+				<key>FixHDA</key>
 				<true/>
 				<key>FixHPET</key>
 				<false/>
@@ -147,6 +153,11 @@
 		</dict>
 		<key>FixHeaders</key>
 		<true/>
+		<key>RenameDevices</key>
+		<dict>
+			<key>B0D3</key>
+			<string>HDAU</string>
+		</dict>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -414,13 +425,15 @@
 				<data>
 				ElkAAA==
 				</data>
+				<key>framebuffer-con1-enable</key>
+				<integer>1</integer>
+				<key>framebuffer-con1-pipe</key>
+				<data>
+				EgAAAA==
+				</data>
 				<key>framebuffer-patch-enable</key>
 				<data>
 				AQAAAA==
-				</data>
-				<key>framebuffer-unifiedmem</key>
-				<data>
-				AAAAwA==
 				</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x8,0x0)</key>
