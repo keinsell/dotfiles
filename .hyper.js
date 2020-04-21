@@ -97,7 +97,7 @@ module.exports = {
     // Git Bash
     // - Example: `C:\\Program Files\\Git\\git-cmd.exe`
     // Then Add `--command=usr/bin/bash.exe` to shellArgs
-    shell: "/usr/local/bin/zsh",
+    shell: "",
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
     shellArgs: ["--login"],
