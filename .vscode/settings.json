@@ -1,6 +1,8 @@
 {
   // [look:general]
   "workbench.editor.showTabs": false,
+  // [look:theme]
+  "workbench.colorTheme": "GitHub Light Default",
   // [look:icons]
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "quill-icons-minimal",
@@ -8,6 +10,10 @@
   "editor.cursorSmoothCaretAnimation": true,
   "workbench.list.smoothScrolling": true,
   "editor.smoothScrolling": true,
+  // [feature:code-style]
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.autoSave": "onWindowChange",
   // [feature:typescript]
   "typescript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
