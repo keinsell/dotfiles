@@ -1,10 +1,14 @@
 {
-  // Personal
+  // [look:general]
   "workbench.editor.showTabs": false,
-  // Rice
+  // [look:icons]
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "quill-icons-minimal",
-  // TypeScript Configuration
+  // [look:animation]
+  "editor.cursorSmoothCaretAnimation": true,
+  "workbench.list.smoothScrolling": true,
+  "editor.smoothScrolling": true,
+  // [feature:typescript]
   "typescript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
   "typescript.inlayHints.parameterTypes.enabled": true,
