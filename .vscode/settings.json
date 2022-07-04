@@ -1,0 +1,14 @@
+{
+  // Personal
+  "workbench.editor.showTabs": false,
+  // Rice
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.iconTheme": "quill-icons-minimal",
+  // TypeScript Configuration
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+}
