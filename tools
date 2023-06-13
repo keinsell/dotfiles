@@ -1,0 +1,41 @@
+cargo install coreutils exa bat fd-find ripgrep du-dust tokei hyperfine mprocs bob-nvim git-delta gitui irust zoxide starship skim broot sd bandwhich bottom evcxr_jupyter ncspot du-dust speedtest-rs rtx-cli
+cargo install exa # ls replacement
+cargo install bat # cat replacement
+cargo install fd-find # find replacement
+cargo install ripgrep # grep replacement
+cargo install du-dust # du replacement
+cargo install bacon # rust developmet
+cargo install tokei # cloc replacement
+cargo install hyperfine
+cargo install mprocs
+cargo install bob-nvim # vim version manager
+cargo install git-delta # git diff replacement
+cargo install gitui # git tui
+cargo install irust # rust repl
+cargo install zoxide # cd replacement
+cargo install starship # prompt
+cargo install skim # fzf replacement
+cargo install broot # tree replacement
+cargo install sd # sed replacement
+cargo install bandwhich # bandwidth
+cargo install bottom # top replacement
+cargo install evcxr_jupyter # jupyter kernel for rust
+carg install ncspot # spotify client
+cargo install du-dust # du replacement
+cargo install speedtest-rs # speedtest
+cargo insall rtx-cli # runtimes
+
+alias ls='exa'
+alias ll='exa -l'
+alias la='exa -la'
+alias l='exa -l'
+alias l1='exa -1'
+
+alias cat='bat'
+alias c='bat'
+
+alias du='dust'
+
+alias grep='rg'
+
+aliast head='coreutils head'
