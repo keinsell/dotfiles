@@ -1,3 +1,6 @@
+// To use Hyper as default terminal in Linux run followin command
+// sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /opt/Hyper/hyper 50
+
 "use strict";
 // Future versions of Hyper may add additional config options,
 // which will not automatically be merged into this file.
@@ -45,11 +48,11 @@ module.exports = {
     workingDirectory: "",
     // if you're using a Linux setup which show native menus, set to false
     // default: `true` on Linux, `true` on Windows, ignored on macOS
-    showHamburgerMenu: "",
+    showHamburgerMenu: false,
     // set to `false` (without backticks and without quotes) if you want to hide the minimize, maximize and close buttons
     // additionally, set to `'left'` if you want them on the left, like in Ubuntu
     // default: `true` (without backticks and without quotes) on Windows and Linux, ignored on macOS
-    showWindowControls: "",
+    showWindowControls: false,
     // custom padding (CSS format, i.e.: `top right bottom left`)
     padding: "12px 14px",
     // the full list. if you're going to provide the full color palette,
@@ -122,7 +125,7 @@ module.exports = {
     macOptionSelectionMode: "vertical",
     // Whether to use the WebGL renderer. Set it to false to use canvas-based
     // rendering (slower, but supports transparent backgrounds)
-    webGLRenderer: false,
+    webGLRenderer: true,
     // if `true` (without backticks and without quotes), Hyper will ignore ligatures provided by some fonts
     disableLigatures: false,
     // Configuration of Hyperline Plugin, there we can adjust a visible options of plugin, full list is available at https://github.com/Hyperline/hyperline/blob/master/src/lib/plugins/index.js
@@ -140,7 +143,6 @@ module.exports = {
   //   `project#1.0.1`
   // There are a few awesome themes available recommended by me: 'verminal', 'hyper-midnight', 'nord-hyper' and 'hyper-phallus' choose a one that u like most.
   plugins: [
-    "verminal",
     "hyper-blink",
     "hyperpower",
     "hyper-font-ligatures",
@@ -150,7 +152,8 @@ module.exports = {
     "hyperlinks",
     // Choose a one, 'hyperline' or 'hyper-statusline', personally I'm using a 'hyper-statusline' because it's more useful.
     // "hyperline",
-    "hyper-statusline"
+    "hyper-statusline",
+    "hyper-rose-pine"
   ],
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
