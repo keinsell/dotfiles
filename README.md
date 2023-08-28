@@ -1,16 +1,9 @@
-# [WIP] Jayelix's `dotfiles`
+# Unix Pornography
 
-Repository which bootstraps every of my new `linux`/`darwin` system instance to make my CLI fancy and productive.
+On the fellow August 2023 I've decided to commit a little bit more time into ricing my PopOS!.
 
-## Reqiurements
-Before everything you should set `zsh` as a login shell.
+## TODO
 
-```
-chsh -s $(which zsh)
-```
-
-# Special Thanks
-I was struggling with some parts in this repository and few projects helped me a lot :D
-
-- [cowboy](https://github.com/cowboy/), for building cross-OS dotfiles. This repository uses a little amount of code written by `cowboy`
-- [toughtbot](https://github.com/thoughtbot/dotfiles), for repository strucutre
+- [ ] Rofi
+- [ ] Discord
+- [ ]

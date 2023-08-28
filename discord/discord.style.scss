@@ -1,0 +1,41 @@
+/**
+ * @name piOS
+ * @author Saltssaumure
+ * @authorLink https://github.com/Saltssaumure
+ * @description A SUPERHOT piOS inspired theme.
+ * @license GPL-3.0
+ * @version 9.3
+ * @invite uy8nKQVatp
+ * @source https://github.com/Saltssaumure/pios-discord-theme
+ * @donate https://ko-fi.com/saltssaumure
+*/
+
+/* @import url("https://saltssaumure.github.io/pios-discord-theme/pios.min.css"); */
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-frappe.theme.css");
+
+/* See https://github.com/Saltssaumure/pios-discord-theme#customisation for customisation settings. */
+:root {
+  --pios-glow-hue: 180;
+  --pios-glow-intensity: 0.01;
+  --pios-spacing: 0.75;
+  --pios-accent-hue: 450;
+  --pios-title-text: "piOS v2.1.01p";
+
+  --crt-stripe: none; /* none/block*/
+  --crt-scanline: none; /* none/block*/
+  --crt-flicker: none; /* none/flicker*/
+}
+
+.theme-dark {
+  --pios-background-color: #303446;
+  --pios-bright-color: #c6d0f5;
+  --pios-middle-color: #a5adce;
+  --pios-dim-color: #808080;
+}
+
+.theme-light {
+  --pios-background-color: #ffffff;
+  --pios-bright-color: #000000;
+  --pios-middle-color: #a5adce;
+  --pios-dim-color: #a9a9a9;
+}

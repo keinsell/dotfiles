@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z autojump sudo history-substring-search zsh-autosuggestions zsh-syntax-highlighting extract docker colored-man-pages web-search npm node kubectl)
+plugins=(z autojump sudo history-substring-search zsh-autosuggestions zsh-syntax-highlighting extract docker colored-man-pages web-search npm node kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -120,3 +120,5 @@ setopt histignorespace           # skip cmds w/ leading space from history
 export HSTR_CONFIG=hicolor       # get more colors
 bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode check doc)
 
+neofetch
+export PATH=$PATH:/home/keinsell/.spicetify
