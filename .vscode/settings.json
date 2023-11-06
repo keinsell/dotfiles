@@ -1,6 +1,6 @@
 {
   // [look:general]
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": "single",
   // [look:theme]
   "workbench.colorTheme": "GitHub Light Default",
   // [look:icons]
