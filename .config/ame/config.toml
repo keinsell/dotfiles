@@ -1,0 +1,21 @@
+# See https://getcryst.al/docs/amethyst/config for more information on config keys
+
+[base]
+# Whether to warn the user about vimdiff for pacdiff
+pacdiff_warn = false
+# How many versions (amount of times a package has been downloaded to the cache) of a package you want to keep in the cache
+paccache_keep=1
+# If true, ask the user if they want to utilize the AUR on an operation.
+aur_verification_prompt=false
+# Exclude installed packages from getting cleared out of the cache
+paccache_keep_ins_pkgs=true
+
+[extra]
+# Makes Amethyst's output... "cuter"
+uwu=true
+# Makes debug and traces uwued. Please never send us debug logs with this enabled.
+uwu_debug=true
+
+[bin]
+# The path to use for sudo (or any sudo-likes)
+sudo = 'sudo'
