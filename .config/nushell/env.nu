@@ -111,3 +111,4 @@ $env.PATH = ($env.PATH | prepend  $"($env.CARGO_HOME)/bin")
 
 $env.PNPM_HOME = $"($env.HOME_LIBRARIES)/pnpm"
 
+source ($nu.default-config-dir | path join hooks.nu)

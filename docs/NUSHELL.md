@@ -8,6 +8,13 @@ which nu | chsh
 gsettings set org.gnome.Console shell "['/usr/bin/nu']"
 ```
 
+### `zoxide` Integration
+
+```
+ame -S --noconfirm zoxide;
+zoxide init --hook pwd nushell | save -f ($nu.default-config-dir | path join 'integration' | path join "zoxide.nu");
+```
+
 
 ```bash
 cargo install nu_plugin_highlight;
