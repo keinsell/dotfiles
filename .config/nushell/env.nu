@@ -106,6 +106,8 @@ $env.NU_PLUGIN_DIRS = [
 # ------------------------------------------------------------------------------------------
 
 $env.HOME_LIBRARIES = $"($env.HOME)/.lib"
+$env.EDITOR = "webstorm -e" # OR code
+$env.VISUAL = "webstorm -e" # OR code
 
 # Atuin Configuration ----------------------------------------------------------------------
 
