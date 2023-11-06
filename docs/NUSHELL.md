@@ -15,6 +15,15 @@ ame -S --noconfirm zoxide;
 zoxide init --hook pwd nushell | save -f ($nu.default-config-dir | path join 'integration' | path join "zoxide.nu");
 ```
 
+### `atuin` Integration
+
+```
+ame -S --noconfirm atuin;
+mkdir ($nu.default-config-dir | path join 'integration' | path join "atuin");
+atuin init nu | save ($nu.default-config-dir | path join 'integration' | path join "atuin.nu");
+atuin import auto
+```
+
 
 ```bash
 cargo install nu_plugin_highlight;

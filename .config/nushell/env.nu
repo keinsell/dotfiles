@@ -100,15 +100,22 @@ $env.NU_PLUGIN_DIRS = [
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
 # $env.PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
 
+
+# ------------------------------------------------------------------------------------------
+# CUSTOM CONFIGURATION
+# ------------------------------------------------------------------------------------------
+
 $env.HOME_LIBRARIES = $"($env.HOME)/.lib"
 
-# Rust's Cargo Configuration
+# Atuin Configuration ----------------------------------------------------------------------
+
+$env.ATUIN_CONFIG_DIR = ($env.HOME | path join ".atuin")
+
+# Rust's Cargo Configuration ---------------------------------------------------------------
 
 $env.CARGO_HOME = $"($env.HOME_LIBRARIES)/cargo"
 $env.PATH = ($env.PATH | prepend  $"($env.CARGO_HOME)/bin")
 
-# Node.js Package Managers
+# Node.js Package Managers -----------------------------------------------------------------
 
 $env.PNPM_HOME = $"($env.HOME_LIBRARIES)/pnpm"
-
-source ($nu.default-config-dir | path join hooks.nu)

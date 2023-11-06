@@ -6,3 +6,11 @@
 source ($nu.default-config-dir | path join "integration" | path join "zoxide.nu")
 
 # --end-zoxide
+
+
+
+# --start-atuin
+
+source ($nu.default-config-dir | path join "integration" | path join "atuin.nu")
+
+# --end-atuin
