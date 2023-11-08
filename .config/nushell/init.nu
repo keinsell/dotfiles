@@ -1,3 +1,5 @@
+source ($nu.default-config-dir | path join "completion.nu")
+
 # --start-zoxide
 
 # Specifies the directory in which the database is stored.

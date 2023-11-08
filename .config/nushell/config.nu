@@ -758,4 +758,4 @@ $env.config = {
 
 # Source Hooks with Integrations
 
-source ($nu.default-config-dir | path join hooks.nu)
+source ($nu.default-config-dir | path join init.nu)
