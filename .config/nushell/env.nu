@@ -106,8 +106,8 @@ $env.NU_PLUGIN_DIRS = [
 # ------------------------------------------------------------------------------------------
 
 $env.HOME_LIBRARIES = $"($env.HOME)/.lib"
-$env.EDITOR = "webstorm -e" # OR code
-$env.VISUAL = "webstorm -e" # OR code
+$env.EDITOR = "code"  
+$env.VISUAL = "webstorm"
 
 # Atuin Configuration ----------------------------------------------------------------------
 
@@ -121,3 +121,5 @@ $env.PATH = ($env.PATH | prepend  $"($env.CARGO_HOME)/bin")
 # Node.js Package Managers -----------------------------------------------------------------
 
 $env.PNPM_HOME = $"($env.HOME_LIBRARIES)/pnpm"
+let PNPM_BIN_PATH = ($env.PNPM_HOME | path join "bin") 
+$env.PATH = ($env.PATH | prepend $PNPM_BIN_PATH)
