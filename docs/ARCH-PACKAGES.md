@@ -9,7 +9,7 @@ pacman -S --noconfirm ame
 ### Additional
 
 ```
-ame -S --noconfirm 1password jetbrains-toolbox gitkraken discord nushell zoxide fzf github-desktop-bin npm pnpm yarn alacritty-git visual-studio-code-bin docker nvidia docker-desktop timeshift-autosnap firefox obsidian-bin pueue kubo postman-bin spacedrive-bin ipfs-desktop anytype-bin signal-desktop ulauncher mailspring
+ame -S --noconfirm 1password jetbrains-toolbox gitkraken discord nushell zoxide fzf github-desktop-bin npm pnpm yarn alacritty-git visual-studio-code-bin docker nvidia docker-desktop timeshift-autosnap firefox obsidian-bin pueue kubo postman-bin spacedrive-bin ipfs-desktop anytype-bin signal-desktop mailspring termius
 ```
 
 ### Music
