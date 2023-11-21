@@ -41,6 +41,22 @@ https://github.com/kraxarn/spotify-qt
 https://spicetify.app/
 ```
 
+### Developer Tools
+
+- `curl https://cli.configu.com/install.sh | sh`, **Configu** is a new standard for managing configurations in software projects.
+
+#### Kubernetes
+
+```
+ame -S --noconfirm minikube helm kind
+```
+
+```
+alias kubectl="minikube kubectl --"
+# OR
+ln -s $(which minikube) /usr/local/bin/kubectl 
+```
+
 ### Ulauncher
 
 ```bash

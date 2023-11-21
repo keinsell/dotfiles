@@ -759,3 +759,5 @@ $env.config = {
 # Source Hooks with Integrations
 
 source ($nu.default-config-dir | path join init.nu)
+
+def kubectl [] { minikube kubectl }
