@@ -26,7 +26,7 @@ I really like tiling window managers, yet I could never give up on "traditional"
 ### Additional
 
 ```
-ame -S --noconfirm 1password jetbrains-toolbox gitkraken discord nushell zoxide fzf github-desktop-bin npm pnpm yarn alacritty-git visual-studio-code-bin docker nvidia docker-desktop timeshift-autosnap firefox obsidian-bin pueue kubo postman-bin spacedrive-bin ipfs-desktop anytype-bin signal-desktop mailspring termius
+ame -S --noconfirm 1password 1password-cli jetbrains-toolbox gitkraken discord nushell zoxide fzf github-desktop-bin npm pnpm yarn alacritty-git visual-studio-code-bin docker nvidia docker-desktop timeshift-autosnap firefox obsidian-bin pueue kubo postman-bin spacedrive-bin ipfs-desktop anytype-bin signal-desktop mailspring termius
 ```
 
 ### Music
