@@ -34,7 +34,7 @@ ame -S --noconfirm 1password 1password-cli jetbrains-toolbox gitkraken discord n
 ### Media
 
 ```
-ame -S --noconfirm yt-dlp parabolic
+ame -S --noconfirm yt-dlp parabolic vdhcoapp
 ```
 
 ```
