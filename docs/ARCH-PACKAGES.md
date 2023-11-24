@@ -31,6 +31,12 @@ ame -S --noconfirm 1password 1password-cli jetbrains-toolbox gitkraken discord n
 
 ### Music
 
+### Media
+
+```
+ame -S --noconfirm yt-dlp parabolic
+```
+
 ```
 https://github.com/jpochyla/psst
 https://github.com/xou816/spot
