@@ -51,6 +51,16 @@ https://spicetify.app/
 
 - `curl https://cli.configu.com/install.sh | sh`, **Configu** is a new standard for managing configurations in software projects.
 
+
+### Privacy
+
+- `ProtonVPN` - https://wiki.archlinux.org/title/ProtonVPN#Setup
+
+```
+ame -S --noconfirm 
+```
+
+
 #### Kubernetes
 
 ```
