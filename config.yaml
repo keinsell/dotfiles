@@ -1,0 +1,36 @@
+config:
+  backup: true
+  create: true
+  dotpath: dotfiles
+dotfiles:
+  f_bashrc:
+    src: bashrc
+    dst: ~/.bashrc
+  f_zshrc:
+    src: zshrc
+    dst: ~/.zshrc
+  f_p10k.zsh:
+    src: p10k.zsh
+    dst: ~/.p10k.zsh
+  f_dircolors:
+    src: dircolors
+    dst: ~/.dircolors
+  d_nushell:
+    src: config/nushell
+    dst: ~/.config/nushell
+  f_settings.toml:
+    src: rustup/settings.toml
+    dst: ~/.rustup/settings.toml
+  d_fish:
+    src: config/fish
+    dst: ~/.config/fish
+profiles:
+  luminar:
+    dotfiles:
+    - f_bashrc
+    - f_zshrc
+    - f_p10k.zsh
+    - f_dircolors
+    - d_nushell
+    - f_settings.toml
+    - d_fish
