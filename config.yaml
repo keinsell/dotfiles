@@ -24,6 +24,9 @@ dotfiles:
   d_fish:
     src: config/fish
     dst: ~/.config/fish
+  d_alacritty:
+    src: config/alacritty
+    dst: ~/.config/alacritty
 profiles:
   luminar:
     dotfiles:
@@ -34,3 +37,4 @@ profiles:
     - d_nushell
     - f_settings.toml
     - d_fish
+    - d_alacritty
