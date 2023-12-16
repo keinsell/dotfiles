@@ -27,6 +27,9 @@ dotfiles:
   d_alacritty:
     src: config/alacritty
     dst: ~/.config/alacritty
+  d_atuin:
+    src: config/atuin
+    dst: ~/.config/atuin
 profiles:
   luminar:
     dotfiles:
@@ -38,3 +41,4 @@ profiles:
     - f_settings.toml
     - d_fish
     - d_alacritty
+    - d_atuin
