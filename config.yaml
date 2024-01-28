@@ -6,34 +6,48 @@ dotfiles:
   f_bashrc:
     src: bashrc
     dst: ~/.bashrc
+    link: absolute
   f_zshrc:
     src: zshrc
     dst: ~/.zshrc
+    link: absolute
   f_p10k.zsh:
     src: p10k.zsh
     dst: ~/.p10k.zsh
+    link: absolute
   f_dircolors:
     src: dircolors
     dst: ~/.dircolors
+    link: absolute
   d_nushell:
     src: config/nushell
     dst: ~/.config/nushell
+    link: absolute
   f_settings.toml:
     src: rustup/settings.toml
     dst: ~/.rustup/settings.toml
+    link: absolute
   d_fish:
     src: config/fish
     dst: ~/.config/fish
+    link: absolute
   d_alacritty:
     src: config/alacritty
     dst: ~/.config/alacritty
+    link: absolute
   d_atuin:
     src: config/atuin
     dst: ~/.config/atuin
+    link: absolute
   d_spicetify:
     src: config/spicetify
     dst: ~/.config/spicetify
     chmod: '700'
+    link: absolute
+  d_oh-my-zsh:
+    src: oh-my-zsh
+    dst: ~/.oh-my-zsh
+    link: absolute
 profiles:
   luminar:
     dotfiles:
@@ -47,3 +61,4 @@ profiles:
     - d_alacritty
     - d_atuin
     - d_spicetify
+    - d_oh-my-zsh
