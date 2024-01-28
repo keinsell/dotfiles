@@ -2,7 +2,10 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 export ZSH="$HOME/.oh-my-zsh"
+
+export ZSH_DISABLE_COMPFIX=true
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -75,8 +78,9 @@ plugins=(
   zoxide
   sudo
   history-substring-search
-  fast-syntax-highlighting
+  zsh-syntax-highlighting
   colored-man-pages
+  fzf
   npm
   node
   zsh-autocomplete
@@ -111,3 +115,15 @@ export LANG=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval "$(zoxide init zsh)"
+eval "$(atuin init zsh)"
+eval $(thefuck --alias)
+
+autoload -U compinit && compinit -u
+
+# pnpm
+export PNPM_HOME="/home/keinsell/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

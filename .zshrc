@@ -122,3 +122,10 @@ bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode che
 
 neofetch
 export PATH=$PATH:/home/keinsell/.spicetify
+
+export PNPM_HOME="/home/keinsell/.local/share/pnpm"
+
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
