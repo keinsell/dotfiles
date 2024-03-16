@@ -45,6 +45,7 @@ install_package "git"
 install_package "git-lfs"
 install_package "htop"
 install_package "httpie"
+install_package "forgit"
 install_package "neovim"
 install_package "nnn-nerd"
 install_package "python"
@@ -280,5 +281,9 @@ install_gh_plugin "dlvhdr/gh-dash"
 install_gh_plugin "github/gh-copilot"
 
 print_in_purple "OP plugins\n"
+
+print_in_purple "Fish\n"
+
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 
 clean_up_cache
