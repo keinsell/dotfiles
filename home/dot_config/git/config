@@ -1,0 +1,26 @@
+[user]
+    name="Jakub Olan"
+    email="keinsell@protonmail.com"
+
+[core]
+    # https://git-scm.com/book/en/v2/Appendix-C:-Git-Commands-Setup-and-Config
+    editor="code --wait"
+    excludesfile="~/.config/git/gitignore.template"
+
+[init]
+    defaultBranch="main"
+
+[color]
+    status="auto"
+
+# https://github.com/git-ecosystem/git-credential-manager
+# git-credential-manager configure
+[credential]
+    # https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/configuration.md#credentialcredentialstore
+    credentialStore = "secretservice" # secretservice (GUI Linux), gpg (MacOS/Linux) or keychain (MacOS)
+    interactive = "auto"
+    cacheOptions = "--timeout 300"
+	helper = 
+	helper = /usr/bin/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
