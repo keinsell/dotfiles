@@ -1,0 +1,77 @@
+<application>
+  <component name="AILicenseTypeStorage">
+    <option name="selectedType" value="PRO" />
+  </component>
+  <component name="ActionHistoryManager">
+    <ids>
+      <option value="JavaScript.Debugger.ToggleExceptionBreakpoint" />
+    </ids>
+  </component>
+  <component name="BuiltInServerOptions" allowUnsignedRequests="true" />
+  <component name="FileEditorProviderManager">{}</component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="Inter" />
+    <option name="fontSize" value="14.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+    <option name="overrideLafFonts" value="true" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "ExpandBeforeRunStepsPanel": "true",
+    "FindSplitterProportion": "0.2485453",
+    "GeneralSettings.initiallyConfigured": "true",
+    "InstalledPluginsSearchHistory": "keymap\nkeyma\nkey\nke\nvscode",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "1",
+    "LAST_EXTRACTOR_SCRIPTS_CLEANUP_VERSION/data/aggregators": "WS-241.15989.105",
+    "MarketplacePluginsSearchHistory": "/tag:Theme green\n/tag:Theme gree\n/tag:Theme g\n/tag:Theme /sortBy:downloads\n/tag:Theme",
+    "PluginConfigurable.selectionTab": "1",
+    "RunOnceActivity.Run Grazie Token Refresher": "true",
+    "RunOnceActivity.llm.installer.activate.toolwindow": "true",
+    "RunOnceActivity.webstorm.auto-popup.quick-doc.initialized": "true",
+    "RunOnceActivity.webstorm.code.vision.default.position.initialized": "true",
+    "SettingsSearchHistory": "keymap\nvscode\nwaka\nrun\nProjects",
+    "TextEditorWithPreview.SplitterProportionKey": "0.528914",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "enter_selection_count": "5",
+    "evlsprt3.241": "6",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.version": "241.15989.105",
+    "file.gist.reindex.count": "1",
+    "fileTypeChangedCounter": "1",
+    "fontSizeToResetConsole": "13.0",
+    "fontSizeToResetEditor": "13.0",
+    "got.it.tooltip.reader.mode.got.it": "1",
+    "ide.memory.adjusted": "true",
+    "input.method.disabler.muted": "true",
+    "js.live.template.contexts.migrated": "true",
+    "js.rename.search.for.text.occurrences": "false",
+    "js.rename.search.in.comments": "false",
+    "last_opened_file_path": "/tank/mikoshi/rancher/rancher_data",
+    "licl.day": "19866",
+    "licl.ticks": "13",
+    "llm.installer.last.toolwindow.state": "AI_ASSISTANT",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "previousColorScheme": "_@user_Dark",
+    "registry.to.advanced.settings.migration.build": "WS-241.15989.105",
+    "settings.code.style.selected.tab.JavaScript": "Imports",
+    "terminalCustomCommandExecutionTurnOff": "true",
+    "ts.lib.d.ts.version": "5.4.3",
+    "webstorm.hide.welcome.screen.promo": "true"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/keinsell/Projects",
+      "/tank/mikoshi/rancher/rancher_data",
+      "/home/keinsell/Projects/stepapp_backend"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+</application>

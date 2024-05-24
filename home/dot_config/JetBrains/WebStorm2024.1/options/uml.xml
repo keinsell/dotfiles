@@ -1,0 +1,11 @@
+<application>
+  <component name="UmlConfiguration">
+    <option name="fitContentAfterLayout" value="false" />
+    <option name="relayoutOnNewElements" value="false" />
+    <option name="categories">
+      <map>
+        <entry id="Microservices" categories="From tests;From libraries;Show Neighbours of Selected Nodes" />
+      </map>
+    </option>
+  </component>
+</application>

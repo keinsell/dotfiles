@@ -1,0 +1,23 @@
+<application>
+  <component name="DimensionService">
+    <location key="find.popup.0.0.1920.1080" x="711" y="210" />
+    <size key="find.popup.0.0.1920.1080" width="668" height="870" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1822" height="364" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1822" height="364" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1822" height="364" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1822" height="364" />
+  </component>
+  <component name="WindowManager">
+    <frame x="8" y="47" width="1904" height="1025" />
+  </component>
+  <component name="WindowStateApplicationService">
+    <state x="368" y="560" width="946" height="1024" key="WELCOME_SCREEN" timestamp="1716429062377">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="368" y="560" width="946" height="1024" key="WELCOME_SCREEN/0.0.1920.1080" timestamp="1716429062377" />
+    <state x="979" y="498" key="ide.config.custom.settings" timestamp="1716427301914">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="979" y="498" key="ide.config.custom.settings/0.0.1920.1080" timestamp="1716427301914" />
+  </component>
+</application>

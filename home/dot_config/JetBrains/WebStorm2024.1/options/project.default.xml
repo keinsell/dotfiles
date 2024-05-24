@@ -1,0 +1,119 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="AutoImportSettings">
+        <option name="autoReloadType" value="SELECTIVE" />
+      </component>
+      <component name="FormatOnSaveOptions">
+        <option name="myRunOnSave" value="true" />
+      </component>
+      <component name="JavaScriptLibraryMappings">
+        <includedPredefinedLibrary name="Node.js Core" />
+      </component>
+      <component name="PrettierConfiguration">
+        <option name="myConfigurationMode" value="AUTOMATIC" />
+        <option name="myRunOnSave" value="true" />
+      </component>
+      <component name="ProjectDictionaryState">
+        <dictionary name="keinsell" />
+      </component>
+      <component name="ProjectInspectionProfilesVisibleTreeState">
+        <entry key="Project Default">
+          <profile-state>
+            <expanded-state>
+              <State>
+                <id>Angular</id>
+              </State>
+              <State>
+                <id>Flow type checkerJavaScript and TypeScript</id>
+              </State>
+              <State>
+                <id>General</id>
+              </State>
+              <State>
+                <id>GeneralJavaScript and TypeScript</id>
+              </State>
+              <State>
+                <id>JavaScript and TypeScript</id>
+              </State>
+              <State>
+                <id>Security</id>
+              </State>
+              <State>
+                <id>TypeScriptJavaScript and TypeScript</id>
+              </State>
+            </expanded-state>
+            <selected-state>
+              <State>
+                <id>User defined</id>
+              </State>
+            </selected-state>
+          </profile-state>
+        </entry>
+      </component>
+      <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "javascript.nodejs.core.library.configured.version": "22.2.0",
+    "javascript.nodejs.core.library.typings.version": "20.12.12",
+    "last_opened_file_path": "/home/keinsell/Projects",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "prettierjs.PrettierConfiguration.Package": "/usr/lib/node_modules/prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "typescript.add.unambiguous.imports.on.the.fly": "true"
+  }
+}]]></component>
+      <component name="ReaderModeSettings">
+        <option name="showWarnings" value="true" />
+      </component>
+      <component name="TaskManager">
+        <task active="true" id="Default" summary="Default task">
+          <created>1716427418819</created>
+          <option name="number" value="Default" />
+          <option name="presentableId" value="Default" />
+          <updated>1716427418819</updated>
+          <workItem from="1716427419848" duration="494000" />
+          <workItem from="1716428438618" duration="89000" />
+          <workItem from="1716428542438" duration="234000" />
+        </task>
+        <servers />
+      </component>
+      <component name="TimeTrackingManager">
+        <option name="totallyTimeSpent" value="817000" />
+      </component>
+      <component name="WindowStateProjectService">
+        <state x="762" y="316" width="1158" height="504" key="#Docker" timestamp="1716427800514">
+          <screen x="0" y="0" width="1920" height="1080" />
+        </state>
+        <state x="762" y="316" width="1158" height="504" key="#Docker/0.0.1920.1080" timestamp="1716427800514" />
+        <state x="1206" y="415" key="#com.intellij.tools.ToolEditorDialog" timestamp="1716427657578">
+          <screen x="0" y="0" width="1920" height="1080" />
+        </state>
+        <state x="1206" y="415" key="#com.intellij.tools.ToolEditorDialog/0.0.1920.1080" timestamp="1716427657578" />
+        <state x="1279" y="388" key="FileChooserDialogImpl" timestamp="1716429074427">
+          <screen x="0" y="0" width="1920" height="1080" />
+        </state>
+        <state x="1279" y="388" key="FileChooserDialogImpl/0.0.1920.1080" timestamp="1716429074427" />
+        <state x="1057" y="297" key="SettingsEditor" timestamp="1716428774444">
+          <screen x="0" y="0" width="1920" height="1080" />
+        </state>
+        <state x="1057" y="297" key="SettingsEditor/0.0.1920.1080" timestamp="1716428774444" />
+      </component>
+      <component name="masterDetails">
+        <states>
+          <state key="ScopeChooserConfigurable.UI">
+            <settings>
+              <splitter-proportions>
+                <option name="proportions">
+                  <list>
+                    <option value="0.2" />
+                  </list>
+                </option>
+              </splitter-proportions>
+            </settings>
+          </state>
+        </states>
+      </component>
+    </defaultProject>
+  </component>
+</application>

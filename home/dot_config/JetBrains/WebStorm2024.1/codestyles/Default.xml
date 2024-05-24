@@ -1,0 +1,8 @@
+<code_scheme name="Default" version="173">
+  <option name="SOFT_MARGINS" value="80,120" />
+  <codeStyleSettings language="Gherkin">
+    <indentOptions>
+      <option name="USE_TAB_CHARACTER" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+</code_scheme>

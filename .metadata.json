@@ -1,0 +1,25 @@
+{
+  "hyprland": {
+    "arch_x86": [
+      "kitty-git",
+      "swww",
+      "eww",
+      "gtk-engine-murrine",
+      "gnome-themes-extra",
+      "nitch",
+      "nerd-fonts",
+      "wofi",
+      "dunst"
+    ]
+  },
+  "software": {
+    "linux": {
+      "arch_x86_64": {
+        "shell": ["nushell"],
+        "web_browser": ["floorp"],
+        "file_browser": ["spacedrive"],
+        "code_editor": ["zed-editor-git", "webstorm"]
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+export BROWSER=floorp
+export TERM=alacritty
+export QT_QPA_PLATFORMTHEME="qt5ct"
+
+if [ -e /home/keinsell/.nix-profile/etc/profile.d/nix.sh ]; then . /home/keinsell/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
+export PATH=/home/testuser/bin:$PATH
+export DOCKER_HOST=unix:///run/user/1000/docker.sock

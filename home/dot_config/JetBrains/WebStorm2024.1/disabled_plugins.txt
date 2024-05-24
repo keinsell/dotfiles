@@ -1,0 +1,16 @@
+AngularJS
+Karma
+Refactor-X
+Subversion
+com.dmarcotte.handlebars
+com.intellij.plugins.eclipsekeymap
+com.intellij.plugins.netbeanskeymap
+com.intellij.plugins.visualstudiokeymap
+com.intellij.plugins.webcomponents
+com.jetbrains.lang.ejs
+com.jetbrains.plugins.jade
+hg4idea
+org.jetbrains.plugins.gitlab
+org.jetbrains.plugins.less
+org.jetbrains.plugins.sass
+org.jetbrains.plugins.vue

@@ -1,0 +1,19 @@
+<application>
+  <component name="SettingsSyncSettings">
+    <option name="disabledSubcategories">
+      <map>
+        <entry key="PLUGINS">
+          <value>
+            <list>
+              <option value="com.fapiko.jetbrains.plugins.better_direnv" />
+              <option value="com.tabbyml.intellij-tabby" />
+              <option value="io.plugin.tsnode" />
+              <option value="org.mvnsearch.plugins.justPlugin" />
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="syncEnabled" value="true" />
+  </component>
+</application>
