@@ -1,27 +1,3 @@
-## where to store your database, default is your system data directory
-## linux/mac: ~/.local/share/atuin/history.db
-## windows: %USERPROFILE%/.local/share/atuin/history.db
-# db_path = "~/.history.db"
-
-## where to store your encryption key, default is your system data directory
-## linux/mac: ~/.local/share/atuin/key
-## windows: %USERPROFILE%/.local/share/atuin/key
-# key_path = "~/.key"
-
-## where to store your auth session token, default is your system data directory
-## linux/mac: ~/.local/share/atuin/session
-## windows: %USERPROFILE%/.local/share/atuin/session
-# session_path = "~/.session"
-
-## date format used, either "us" or "uk"
-# dialect = "us"
-
-## default timezone to use when displaying time
-## either "l", "local" to use the system's current local timezone, or an offset
-## from UTC in the format of "<+|->H[H][:M[M][:S[S]]]"
-## for example: "+9", "-05", "+03:30", "-01:23:45", etc.
-# timezone = "local"
-
 ## enable or disable automatic sync
 # auto_sync = true
 
@@ -36,17 +12,12 @@
 ## set it to 0 to sync after every command
 # sync_frequency = "10m"
 
-## which search mode to use
-## possible values: prefix, fulltext, fuzzy, skim
-# search_mode = "fuzzy"
+search_mode = "fulltext"
 
 ## which filter mode to use
 ## possible values: global, host, session, directory
-# filter_mode = "global"
-
-## With workspace filtering enabled, Atuin will filter for commands executed
-## in any directory within a git repository tree (default: false)
-# workspaces = false
+filter_mode = "global"
+workspaces = true
 
 ## which filter mode to use when atuin is invoked from a shell up-key binding
 ## the accepted values are identical to those of "filter_mode"
@@ -125,17 +96,8 @@
 ## Configure whether or not to show tabs for search and inspect
 # show_tabs = true
 
-## Defaults to true. This matches history against a set of default regex, and will not save it if we get a match. Defaults include
-## 1. AWS key id
-## 2. Github pat (old and new)
-## 3. Slack oauth tokens (bot, user)
-## 4. Slack webhooks
-## 5. Stripe live/test keys
-# secrets_filter = true
-
-## Defaults to true. If enabled, upon hitting enter Atuin will immediately execute the command. Press tab to return to the shell and edit.
-# This applies for new installs. Old installs will keep the old behaviour unless configured otherwise.
-enter_accept = true
+secrets_filter = true
+enter_accept = false
 
 ## Defaults to "emacs".  This specifies the keymap on the startup of `atuin
 ## search`.  If this is set to "auto", the startup keymap mode in the Atuin
@@ -187,12 +149,11 @@ enter_accept = true
 ## Set commands that should be totally stripped and ignored from stats
 # common_prefix = ["sudo"]
 
-## Set commands that will be completely ignored from stats
-# ignored_commands = [
-#   "cd",
-#   "ls",
-#   "vi"
-# ]
+ignored_commands = [
+   "cd",
+   "ls",
+   "vi"
+ ]
 
 [keys]
 # Defaults to true. If disabled, using the up/down key won't exit the TUI when scrolled past the first/last entry.

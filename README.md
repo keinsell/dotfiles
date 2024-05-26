@@ -1,22 +1,37 @@
-# "The Taste of Unix"
+# Unnecessary Dotfiles
 
-> While I own multiple devices and these dotfiles we're always somehow portable to MacOS (not hyprland itself) - my Macbook died as it's seem they do not tolerate can of Redbull and this repository will be maintained nad intented to reproduce only on Arch Linux (here: CachyOS), by the end of the year I'll be switching to NixOS.
+Repository that contains cuts of my configurations from at least six different machines and ideas,
+it's highly advised to use any of those—by the end of 2024 I think everything will be rewritten into NixOS.
 
-Theme ideas:
+![assets/evergreen.png](assets/evergreen.png)
 
-- "Natural", the calm composition made on color of the forest.
-- "Sakura", the calm compositon base on bloomson and pink colors.
-- "Cyberpunk", dark colors with vibrant accents.
+Configuration is based on [Hyprland]() to which I've jumped by pure accident to see if really [Nvidia]() is a real problem there (and overall speaking of [Wayland]()) - as things we're working on first-shot with [CachyOS]() I've decided to move up from [Gnome]() to Hyprland an it feels like a good choice.
+
+*By "running with Nvidia" I mean: AMD Ryzen 9 7950X have integrated graphics which is used for system, and the NVIDIA GeForce RTX 4090 is used only for CUDA and OpenCL tasks with `nvidia-prime` approach.*
+
+---
+
+**[<kbd><br>Install<br></kbd>][Install]**
+**[<kbd><br>Quick Start<br></kbd>][Quick Start]**
+**[<kbd><br>Configurations<br></kbd>][Configure]**
+
+---
+
+## Themes
+
+I always prefer to have multiple themes for different moods, the one usually I go with is `Sakura` however, recently I decided to switch to `Evergreen` for a while and in terms of `Cypherpunk` when I was using `nord` and `tokyo-night` I never matched it "correctly" with anything so I would say it's last preference.
+
+- [`Evergreen`](https://github.com/sainnhe/everforest), the calm composition made on color of the forest. ([`miasma`](https://github.com/xero/miasma.nvim))
+- [`Sakura`](https://rosepinetheme.com/),  All natural pine, faux fur and a bit of soho vibes for the classy minimalist. 
+- [`Cypherpunk`](https://github.com/folke/tokyonight.nvim), dark composition made with dark indigo and neon-like colors.
 
 
-### Naturalish
+### Evergreen
+
+![evergreen-2](assets/evergreen-2.png)
 
 | Spec      | Value | Description |
 | ----------- | ----------- | ---- |
-| Operating System      |   `cachyos-x86_64`     | |
-| Shell   | `fish`        | |
-| Shell Prompt | | |
-| Desktop Environment | `hyprland` | Experimental desktop environment, which I've choose after using GNOME for past 6 years. |
 | GTK-Theme     | `everforest` | Available as `everforest-gtk-theme-git` package in AUR repository. |
 | Theme | `everforest` | |
 | Icons | | |
@@ -28,13 +43,42 @@ Theme ideas:
 
 - GTK: [`tokyonight`](https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme)
 
+<!----------------------------------------------------------------------------->
+
+## Fundamentals
+
+| X                     |                                                  |                                                                                                                                                    |
+|-----------------------|--------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Terminal Emulator** | `kitty`, `st`, `rio`, `alacritty`                |                                                                                                                                                    |
+| **Shell**             | [`nushell`](./home/dot_config/nushell/README.md) | Nushell isn't mean to be used as login shell due to lack of POSIX compliance, however it's friendly shell that can be used as default in terminal. |
+| **Modal Editor**      | `helix`                                          |                                                                                                                                                    |
+| **Editor**            | `code`                                           | "Everybody eventually have VSCode installed on their machine"                                                                                      |
+| **IDE**               | IntelliJ Family                                  |                                                                                                                                                    |
+| **Web Browser**       | `floorp`, `surf`                                 |                                                                                                                                                    |
+| **File Manager**      | `superfile`, `nemo`                              |                                                                                                                                                    |
+
+
+
 ## Installation
 
-```
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply $GITHUB_USERNAME
-```
+- Clone repository to `~/.local/share/chezmoi`
+- Install dotfiles directory using `chezmoi apply`.
+- Take a look at `/etc/profile` and adjust yours to match the functionality (optional, but recommended).
 
 
 ## Utilities
 
 - [ThemeChanger](https://github.com/ALEX11BR/ThemeChanger), [Gradience](https://flathub.org/apps/com.github.GradienceTeam.Gradience) for modifing themes of `Qt` and `Gtk` applications.
+
+<!----------------------------------------------------------------------------->
+
+## Development
+
+<!----------------------------------------------------------------------------->
+
+
+<!----------------------------------------------------------------------------->
+
+[Configure]: TODO
+[Install]: TODO
+[Quick Start]: TODO
