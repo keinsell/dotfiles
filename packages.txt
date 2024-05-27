@@ -3,6 +3,7 @@ pacman:floorp
 
 # Security
 pacman:1password
+pacman:git-credential-manager
 
 # File Management
 pacman:nautilius
