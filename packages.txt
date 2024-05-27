@@ -1,2 +1,7 @@
 pacman:carapace-bin
 npm:@microsoft/inshellisense
+pacman:zed-editor-preview
+pacman:nautilius
+pacman:dissent
+pacman:floorp
+pacman:kitty
