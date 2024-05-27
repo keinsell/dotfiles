@@ -1,10 +1,27 @@
-pacman:carapace-bin
-npm:@microsoft/inshellisense
-pacman:zed-editor-preview
-pacman:nautilius
-pacman:dissent
+# Internet
 pacman:floorp
-pacman:kitty
+
+# Security
 pacman:1password
+
+# File Management
+pacman:nautilius
+
+# Developer Tools
 pacman:jetbrains-toolbox-eap
 pacman:jetbrains-toolbox-eap-jre
+pacman:zed-editor-preview
+
+# Terminal Emulator
+pacman:kitty
+pacman:st
+
+# Terminal Utilities
+pacman:carapace-bin
+npm:@microsoft/inshellisense
+
+# GPU Management
+pacman:lact
+
+# Communication
+pacman:dissent
