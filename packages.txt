@@ -5,3 +5,6 @@ pacman:nautilius
 pacman:dissent
 pacman:floorp
 pacman:kitty
+pacman:1password
+pacman:jetbrains-toolbox-eap
+pacman:jetbrains-toolbox-eap-jre
