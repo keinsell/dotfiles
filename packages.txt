@@ -1,6 +1,14 @@
 # System Packages
+# pacman:snapd
+# pacman:flatpak
+pacman:ccache
+pacman:aria2
+pacman:axel
+
+# System
 pacman:ame
 pacman:bauh
+
 
 # Internet
 pacman:floorp
@@ -38,6 +46,9 @@ pacman:lact
 # Communication
 pacman:dissent
 
+# System Administration
+pacman:cockpit
+pacman:cockpit-zfs-manager
 
 # Additional
 pacman:parabolic
