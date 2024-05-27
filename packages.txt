@@ -7,9 +7,9 @@ pacman:meson
 pacman:ccache
 pacman:aria2
 pacman:axel
+pacman:python3-beautyfulsoup4
 
 # System
-pacman:ame
 pacman:bauh
 
 # Internet
@@ -27,6 +27,7 @@ pacman:nautilius
 # Developer
 pacman:github-cli
 pacman:1password-cli
+pacman:helix
 
 # Developer Tools
 pacman:jetbrains-toolbox
@@ -45,7 +46,7 @@ npm:@microsoft/inshellisense
 pacman:lact
 
 # Communication
-pacman:dissent
+pacman:discord
 
 # System Administration
 pacman:cockpit
