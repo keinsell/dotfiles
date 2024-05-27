@@ -27,8 +27,7 @@ pacman:github-cli
 pacman:1password-cli
 
 # Developer Tools
-pacman:jetbrains-toolbox-eap
-pacman:jetbrains-toolbox-eap-jre
+pacman:jetbrains-toolbox
 pacman:zed-editor-preview
 pacman:github-desktop-bin #github-desktop is broken
 
