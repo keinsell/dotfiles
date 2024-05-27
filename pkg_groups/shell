@@ -1,0 +1,22 @@
+[
+   "zsh",
+   "fish",
+   "nushell",
+   "fzf",
+   "ripgrep",
+   "bat",
+   "fd",
+   "exa",
+   "procs",
+   "dust",
+   "tokei",
+   "hyperfine",
+   "sd",
+   "starship",
+   "zoxide",
+   "atuin",
+   "python-numpy",
+   "python-matplotlib",
+   "python-scipy",
+   "bash-preexec"
+]

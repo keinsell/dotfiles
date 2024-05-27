@@ -1,60 +1,11 @@
 # System Packages
 # pacman:snapd
 # pacman:flatpak
-pacman:cmake
-pacman:cpio
-pacman:meson
-pacman:ccache
-pacman:aria2
-pacman:axel
-pacman:python3-beautyfulsoup4
-
-# System
-pacman:bauh
-
-# Wayland Essentials
-pacman:swww
-pacman:waypaper
-
-# Internet
-pacman:floorp
-
-# Security
-pacman:1password
 
 # Later needs to be configured with `git-credential-manager configure`
-pacman:git-credential-manager 
-
-# File Management
-pacman:nautilius
-
-# Developer
-pacman:github-cli
-pacman:1password-cli
-pacman:helix
-
-# Developer Tools
-pacman:jetbrains-toolbox
-pacman:zed-editor-preview
-pacman:github-desktop-bin #github-desktop is broken
-
-# Terminal Emulator
-pacman:kitty
-pacman:st
+# You should also set preferred method of secret storage in /etc/profile
+pacman:git-credential-manager
 
 # Terminal Utilities
 pacman:carapace-bin
 npm:@microsoft/inshellisense
-
-# GPU Management
-pacman:lact
-
-# Communication
-pacman:discord
-
-# System Administration
-pacman:cockpit
-pacman:cockpit-zfs-manager
-
-# Additional
-pacman:parabolic
