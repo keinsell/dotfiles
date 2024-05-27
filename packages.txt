@@ -30,7 +30,7 @@ pacman:1password-cli
 pacman:jetbrains-toolbox-eap
 pacman:jetbrains-toolbox-eap-jre
 pacman:zed-editor-preview
-pacman:github-desktop
+pacman:github-desktop-bin #github-desktop is broken
 
 # Terminal Emulator
 pacman:kitty
