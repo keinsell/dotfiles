@@ -1,6 +1,9 @@
 # System Packages
 # pacman:snapd
 # pacman:flatpak
+pacman:cmake
+pacman:cpio
+pacman:meson
 pacman:ccache
 pacman:aria2
 pacman:axel
@@ -8,7 +11,6 @@ pacman:axel
 # System
 pacman:ame
 pacman:bauh
-
 
 # Internet
 pacman:floorp
