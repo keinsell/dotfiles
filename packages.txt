@@ -3,7 +3,9 @@ pacman:floorp
 
 # Security
 pacman:1password
-pacman:git-credential-manager
+
+# Later needs to be configured with `git-credential-manager configure`
+pacman:git-credential-manager 
 
 # File Management
 pacman:nautilius
