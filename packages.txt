@@ -25,3 +25,7 @@ pacman:lact
 
 # Communication
 pacman:dissent
+
+
+# Additional
+pacman:parabolic
