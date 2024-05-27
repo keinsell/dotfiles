@@ -17,12 +17,21 @@ Configuration is based on [Hyprland]() to which I've jumped by pure accident to 
 
 ---
 
+## Features
+
+- Awful as hell, do not worry this will not look better (talking these about mismatched colours, misaligned icons and missing half of the features that you have in GNOME - but at least here are animations, not that they could not exist in gnome but...)
+- `carapace`-based completions that either are not complete, miss-integrated or just doesn't work at all. Featuring `fish`-completions that are not working at all and `inshellisense` that just ruins everything.
+- `nushell` as default shell to make life more complicated.
+- `kitty` as terminal emulator with artistic artifacts as true **NVIDIA Experience** (TM).
+- `helix` as modal editor, to make vim users mad.
+
+
 ## Themes
 
 I always prefer to have multiple themes for different moods, the one usually I go with is `Sakura` however, recently I decided to switch to `Evergreen` for a while and in terms of `Cypherpunk` when I was using `nord` and `tokyo-night` I never matched it "correctly" with anything so I would say it's last preference.
 
 - [`Evergreen`](https://github.com/sainnhe/everforest), the calm composition made on color of the forest. ([`miasma`](https://github.com/xero/miasma.nvim))
-- [`Sakura`](https://rosepinetheme.com/),  All natural pine, faux fur and a bit of soho vibes for the classy minimalist. 
+- [`Sakura`](https://rosepinetheme.com/),  All natural pine, faux fur and a bit of soho vibes for the classy minimalist.
 - [`Cypherpunk`](https://github.com/folke/tokyonight.nvim), dark composition made with dark indigo and neon-like colors.
 
 
