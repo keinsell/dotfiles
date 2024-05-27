@@ -106,3 +106,11 @@ const integrations_directory = ($nu.default-config-dir | path join 'integrations
 # Install all integration files from the integrations directory
 
 source ($integrations_directory | path join 'zoxide.nu')
+source ($integrations_directory | path join 'autin.nu')
+use ($integrations_directory | path join 'starship.nu')
+
+# Carapace Integration
+
+$env.CARAPACE_BRIDGES = "zsh,fish,bash,inshellisense"
+mkdir ~/.cache/carapace
+carapace _carapace nushell | save --force ~/.cache/carapace/init.nu

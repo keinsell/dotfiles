@@ -16,3 +16,8 @@ if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+set -Ux CARAPACE_BRIDGES 'zsh,fish,bash,inshellisense'
+mkdir -p ~/.config/fish/completions
+carapace --list | awk '{print $1}' | xargs -I{} touch ~/.config/fish/completions/{}.fish
+carapace _carapace | source

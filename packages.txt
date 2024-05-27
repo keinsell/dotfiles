@@ -1,0 +1,2 @@
+pacman:carapace-bin
+npm:@microsoft/inshellisense

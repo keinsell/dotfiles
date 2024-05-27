@@ -864,3 +864,5 @@ $env.config = {
         }
     ]
 }
+
+source ~/.cache/carapace/init.nu
