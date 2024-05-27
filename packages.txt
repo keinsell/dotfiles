@@ -12,6 +12,10 @@ pacman:python3-beautyfulsoup4
 # System
 pacman:bauh
 
+# Wayland Essentials
+pacman:swww
+pacman:waypaper
+
 # Internet
 pacman:floorp
 
