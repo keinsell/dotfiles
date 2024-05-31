@@ -18,5 +18,8 @@
    "python-numpy",
    "python-matplotlib",
    "python-scipy",
-   "bash-preexec"
+   "bash-preexec",
+   "dprint",
+   "turbo",
+   "chezmoi"
 ]

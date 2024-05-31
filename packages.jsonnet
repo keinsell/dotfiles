@@ -29,6 +29,7 @@
   ],
   fonts: [
     'nerd-fonts',
+    'nerd-fonts-complete-mono-glyphs',
     'ttf-geist',
     'ttf-geist-mono',
     'otf-geist',
@@ -37,6 +38,18 @@
     'ttf-monaspace-variable',
     'ttf-jetbrains-mono',
     'ttf-inter',
+    // https://github.com/slavfox/Cozette
+    'cozette-ttf',
+    // https://github.com/nerdypepper/scientifica
+    // 'curie-font',
+    // 'ttf-scientifica',
+    // 'scientifica-font',
+    // https://github.com/SolidZORO/zpix-pixel-font
+    'ttf-zpix',
+    'ttf-miracode',
+    // fantasque-sans
+    'otf-fantasque-sans-mono',
+    'ttf-fantasque-sans-mono',
   ],
   desktop_environment: [
     'swww',
@@ -69,6 +82,10 @@
     'python-matplotlib',
     'python-scipy',
     'bash-preexec',
+    'dprint',
+    // 'biome',
+    'turbo',
+    'chezmoi',
   ],
   software: [
     // File Managers

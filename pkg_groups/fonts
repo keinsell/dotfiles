@@ -1,5 +1,6 @@
 [
    "nerd-fonts",
+   "nerd-fonts-complete-mono-glyphs",
    "ttf-geist",
    "ttf-geist-mono",
    "otf-geist",
@@ -7,5 +8,10 @@
    "otf-monaspace",
    "ttf-monaspace-variable",
    "ttf-jetbrains-mono",
-   "ttf-inter"
+   "ttf-inter",
+   "cozette-ttf",
+   "curie-font",
+   "ttf-scientifica",
+   "scientifica-font",
+   "ttf-zpix"
 ]
