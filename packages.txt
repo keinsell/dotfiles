@@ -1,11 +1,3 @@
-# System Packages
-# pacman:snapd
-# pacman:flatpak
-
-# Later needs to be configured with `git-credential-manager configure`
-# You should also set preferred method of secret storage in /etc/profile
-pacman:git-credential-manager
-
 # Terminal Utilities
 pacman:carapace-bin
 npm:@microsoft/inshellisense

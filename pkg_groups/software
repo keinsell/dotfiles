@@ -31,5 +31,7 @@
    "rye",
    "uv",
    "just",
-   "1password-cli"
+   "1password-cli",
+   "gitbutler-bin",
+   "hoppscotch-app-bin"
 ]

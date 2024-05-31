@@ -85,7 +85,8 @@
     'dprint',
     // 'biome',
     'turbo',
-    'chezmoi',
+    'yadm',
+    'mise',
   ],
   software: [
     // File Managers
@@ -131,6 +132,8 @@
     // Developer Utilities
     'just',
     '1password-cli',
+    'gitbutler-bin',
+    'hoppscotch-app-bin',
   ],
   // TODO: Docker
   // TODO: Virtualization
