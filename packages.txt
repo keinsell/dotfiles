@@ -1,3 +1,9 @@
 # Terminal Utilities
 pacman:carapace-bin
 npm:@microsoft/inshellisense
+https://github.com/timvisee/ffsend
+https://brook.app/
+https://github.com/soywod/himalaya
+https://github.com/alpkeskin/mosint
+https://github.com/reacherhq/check-if-email-exists
+https://github.com/khast3x/h8mail

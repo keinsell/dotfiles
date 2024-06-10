@@ -1,0 +1,2 @@
+hydroxide auth keinsell
+systemctl enable hydroxide.service

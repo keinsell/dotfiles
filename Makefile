@@ -28,4 +28,7 @@ install_shell: install_devel
 install_software: install_devel
 	$(PKG_MANAGER) $(shell jq -r '.[]' ./pkg_groups/software)
 
-install_all: install_de install_fonts install_shell install_software
+install_security: install_devel
+	$(PKG_MANAGER) $(shell jq -r '.[]' ./pkg_groups/security)
+
+install_all: install_de install_fonts install_shell install_software install_security

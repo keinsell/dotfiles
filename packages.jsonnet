@@ -55,6 +55,9 @@
     'swww',
     'waypaper',
     'waybar',
+    'qt5-wayland',
+    'qt6-wayland',
+    'polkit-kde-agent',
   ],
   terminal_emulators: [
     'kitty',
@@ -88,11 +91,22 @@
     'yadm',
     'mise',
   ],
+  security: [
+    'pass',
+    'libsecret',
+    'ydotool',
+    'wl-clipboard',
+    'keybase',
+    'protonvpn',
+    'gnome-keyring',
+    'seahorse',
+  ],
   software: [
     // File Managers
     'nautilus',
     // Web Browsers
     'floorp',
+    'tor-browser',
     'github-cli',
     '1password',
     // Music
@@ -110,7 +124,7 @@
     'lact',  // For iGPU Management
     'bauh',
     // Developer Tools
-    'zed-editor-preview',
+    // 'zed-editor',
     'jetbrains-toolbox',
     'github-desktop-bin',
     'helix',
@@ -134,6 +148,9 @@
     '1password-cli',
     'gitbutler-bin',
     'hoppscotch-app-bin',
+    'hydroxide',
+    'mailspring',
+    'evince',
   ],
   // TODO: Docker
   // TODO: Virtualization

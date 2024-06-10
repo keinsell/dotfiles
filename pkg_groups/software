@@ -1,6 +1,7 @@
 [
    "nautilus",
    "floorp",
+   "tor-browser",
    "github-cli",
    "1password",
    "spotify",
@@ -13,7 +14,6 @@
    "parabolic",
    "lact",
    "bauh",
-   "zed-editor-preview",
    "jetbrains-toolbox",
    "github-desktop-bin",
    "helix",
@@ -33,5 +33,8 @@
    "just",
    "1password-cli",
    "gitbutler-bin",
-   "hoppscotch-app-bin"
+   "hoppscotch-app-bin",
+   "hydroxide",
+   "mailspring",
+   "evince"
 ]
