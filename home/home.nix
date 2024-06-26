@@ -1,5 +1,9 @@
 { config, pkgs, ... }:
 
+# https://home-manager-options.extranix.com
+# https://noogle.dev/
+# https://search.nixos.org/packages
+
 # with import <nixpkgs> {};
 with builtins;
 with lib;
@@ -14,7 +18,6 @@ with lib;
   home.homeDirectory = "/home/keinsell";
   home.stateVersion = "24.05";
   home.packages = [
-    pkgs.cowsay
     pkgs.starship
     pkgs.nushell
     pkgs.carapace
@@ -26,18 +29,26 @@ with lib;
     pkgs.fd
     pkgs.bat
     pkgs.neofetch
-    # pkgs.firefox
     # Docker
     pkgs.docker
     pkgs.docker-buildx
     pkgs.docker-compose
     # Kubernetes
     pkgs.kubectl
+    pkgs.kubernetes-helm
     # Jetbrains IDEs
     pkgs.jetbrains.webstorm
     pkgs.jetbrains.clion
     pkgs.jetbrains.datagrip
+    pkgs.jetbrains.writerside
     pkgs.jetbrains.rust-rover
+    pkgs.jetbrains.pycharm-professional
+    pkgs.jetbrains.idea-ultimate
+    pkgs.jetbrains.goland
+    pkgs.jetbrains.gateway
+    pkgs.android-studio
+    # Lightweight IDEs
+    pkgs.zed-editor
     # Nix Development
     pkgs.cachix
     pkgs.nix-info
@@ -46,6 +57,19 @@ with lib;
     pkgs.nix-health
     pkgs.nil
     pkgs.nh
+    # Rust Development
+    pkgs.rustup
+    #    pkgs.rustc
+    #    pkgs.rust-analyzer
+    #    pkgs.rustfmt
+    #    pkgs.cargo
+    # Node.js Development
+    pkgs.nodejs
+    pkgs.pnpm
+    pkgs.bun
+    pkgs.deno
+    pkgs.turbo
+    pkgs.nodePackages.prisma
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -79,12 +103,21 @@ with lib;
   # Terminal Emulator
   programs.rio.enable = true;
 
+    # Shell Configuration
+    programs.yazi.enable = true;
+    programs.thefuck.enable = true;
+    programs.eza.enable = true;
+    programs.broot.enable = true;
+    programs.carapace.enable = true;
+    programs.starship.enable = true;
+
   programs.lazygit.enable = true;
   programs.bat.enable = true;
   programs.fzf.enable = true;
   programs.jq.enable = true;
   programs.htop.enable = true;
-  programs.carapace.enable = true;
+
+
   programs.jetbrains-remote.enable = true;
 #  programs.jetbrains-remote.ides = with pkgs.jetbrains; [ webstorm rust-rover clion pycharm-professional ];
 
@@ -93,14 +126,10 @@ with lib;
   # Rust Development
   programs.bacon.enable = true;
 
-  programs.yazi.enable = true;
-  programs.thefuck.enable = true;
-  programs.eza.enable = true;
-  programs.broot.enable = true;
+  # Internet
+  programs.firefox.enable = true;
+  programs.firefox.enableGnomeExtensions = true;
 
-
-
-  #  programs.rio.enable = true;
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. These will be explicitly sourced when using a
@@ -137,8 +166,6 @@ with lib;
     defaultCacheTtl = 1800;
     enableSshSupport = true;
   };
-
-  programs.starship.enable = true;
 
   # Enable 'zoxide' and 'zoxide' integration with 'nushell'
   imports = [
