@@ -17,6 +17,23 @@ Configuration is based on [Hyprland]() to which I've jumped by pure accident to 
 
 ---
 
+## Getting Started
+
+```bash
+git clone https://github.com/keinsell/dotfiles ~/.dotfiles
+
+# Install core dependencies (ArchLinux/MacOS)
+make install
+
+# Usecase 1: Linking Single Module 
+make link "module_name"
+# Usecase 2: Linking all modules
+make link-all
+# Usecase 3: Using home-manager
+make home-manager
+```
+
+
 ## Features
 
 - Awful as hell, do not worry this will not look better (talking these about mismatched colours, misaligned icons and missing half of the features that you have in GNOME - but at least here are animations, not that they could not exist in gnome but...)
@@ -59,7 +76,7 @@ I always prefer to have multiple themes for different moods, the one usually I g
 | X                     |                                                  |                                                                                                                                                    |
 |-----------------------|--------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Terminal Emulator** | `kitty`, `st`, `rio`, `alacritty`                |                                                                                                                                                    |
-| **Shell**             | [`nushell`](./home/dot_config/nushell/README.md) | Nushell isn't mean to be used as login shell due to lack of POSIX compliance, however it's friendly shell that can be used as default in terminal. |
+| **Shell**             | [`nushell`](dots/dot_config/nushell/README.md) | Nushell isn't mean to be used as login shell due to lack of POSIX compliance, however it's friendly shell that can be used as default in terminal. |
 | **Modal Editor**      | `helix`                                          |                                                                                                                                                    |
 | **Editor**            | `code`                                           | "Everybody eventually have VSCode installed on their machine"                                                                                      |
 | **IDE**               | IntelliJ Family                                  |                                                                                                                                                    |
