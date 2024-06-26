@@ -82,6 +82,14 @@ with lib;
   programs.jq.enable = true;
   programs.htop.enable = true;
 
+  programs.direnv = {
+        enable = true;
+        nix-direnv.enable = true;
+        config.global = {
+          hide_env_diff = true;
+        };
+  };
+
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. These will be explicitly sourced when using a
   # shell provided by Home Manager. If you don't want to manage your shell
