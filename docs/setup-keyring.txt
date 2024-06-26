@@ -1,0 +1,17 @@
+All packages necessary to start are included in matafile and can be installed with make install_all.
+
+Once packages are installed, additonal steps are required.
+
+1. Import pgp key
+
+gpg --import ~/.gnupg/keinsell@protonmail.com.asc
+
+2. Initalize pass
+
+pass init 402D2364DA7CA536
+
+1. Install libsecret gnome-keyring seahorse
+2. dbus-update-activation-environment --all
+3. gnome-keyring-daemon --start --components=secrets
+https://wiki.archlinux.org/title/GNOME/Keyring#Using_gnome-keyring-daemon_outside_desktop_environments_(KDE,_GNOME,_XFCE,_...)
+4. https://wiki.archlinux.org/title/GNOME/Keyring#PAM_step

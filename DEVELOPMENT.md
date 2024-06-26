@@ -1,17 +1,11 @@
-### Add File/Dir
+# Development
+
+## Creating a new dotifle
 
 ```
-chezmoi add XXXXX
-```
-
-### Preview Drift
-
-```
-chezmoi diff
-```
-
-### Deploy Changes
-
-```
-chezmoi apply
+touch mynewdotfile
+git add mynewdotfile
+git commit -m "mynewdotfile"
+cd ~
+ls -s .dotfiles/mynewdotfile .mydotfile
 ```
