@@ -27,13 +27,13 @@
                 imports = [ self.homeModules.default ];
                 home.username = myUserName;
                 home.homeDirectory = "/${if pkgs.stdenv.isDarwin then "Users" else "home"}/${myUserName}";
-                home.stateVersion = "22.11";
+                home.stateVersion = "24.05";
               });
         };
 
       flake = {
         homeModules.default = { pkgs, ... }: {
-          imports = [ ];
+          imports = [ ./home.nix ];
           programs = {
             git.enable = true;
             starship.enable = true;

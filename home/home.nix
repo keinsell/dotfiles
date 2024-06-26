@@ -19,6 +19,7 @@ with lib;
     pkgs.nushell
     pkgs.carapace
     pkgs.git
+    pkgs.redisinsight
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" "FantasqueSansMono" "GeistMono" ]; })
     pkgs.fzf
     pkgs.ripgrep
@@ -44,6 +45,7 @@ with lib;
     pkgs.nixci
     pkgs.nix-health
     pkgs.nil
+    pkgs.nh
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -53,8 +55,6 @@ with lib;
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
-    "~/.config/nushell/config.nu".source = ./nushell/config.nu;
-    "~/.config/nushell/env.nu".source = ./nushell/env.nu;
     "~/.config/helix/config.toml".source = ./helix/config.toml;
     "~/.config/helix/languages.toml".source = ./helix/languages.toml;
 
@@ -75,20 +75,32 @@ with lib;
       pull.rebase = "true";
     };
   };
+
+  # Terminal Emulator
+  programs.rio.enable = true;
+
   programs.lazygit.enable = true;
   programs.bat.enable = true;
-  programs.zoxide.enable = true;
   programs.fzf.enable = true;
   programs.jq.enable = true;
   programs.htop.enable = true;
+  programs.carapace.enable = true;
+  programs.jetbrains-remote.enable = true;
+#  programs.jetbrains-remote.ides = with pkgs.jetbrains; [ webstorm rust-rover clion pycharm-professional ];
 
-  programs.direnv = {
-        enable = true;
-        nix-direnv.enable = true;
-        config.global = {
-          hide_env_diff = true;
-        };
-  };
+#  programs.ruff.enable = true;
+
+  # Rust Development
+  programs.bacon.enable = true;
+
+  programs.yazi.enable = true;
+  programs.thefuck.enable = true;
+  programs.eza.enable = true;
+  programs.broot.enable = true;
+
+
+
+  #  programs.rio.enable = true;
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. These will be explicitly sourced when using a
@@ -109,15 +121,16 @@ with lib;
   home.sessionVariables = {
     EDITOR = "hx";
     BROWSER = "firefox";
+    SHELL = "/home/keinsell/.nix-profile/bin/nu";
+    TERMINAL = "rio";
   };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-
-
-#  imports = [
-#    ./helix.nix
-#  ];
+#    pkgs.nh = {
+#      enable = true;
+#      clean.enable = true;
+#    };
 
   services.gpg-agent = {
     enable = true;
@@ -127,16 +140,60 @@ with lib;
 
   programs.starship.enable = true;
 
-  programs.nushell = {
-      enable = true;
-      envFile.source = ./nushell/env.nu;
-      configFile.source = ./nushell/config.nu;
-      inherit (config.home) shellAliases;
-  };
+  # Enable 'zoxide' and 'zoxide' integration with 'nushell'
+  imports = [
+    ./programs/nushell.nix
+    ./programs/zoxide.nix
+    ./programs/atuin.nix
+    ./programs/direnv.nix
+  ];
 
   # GUI Configuration
   xsession.enable = true;
 #  programs.dconf.enable = true;
 
   services.blanket.enable = true;
+  services.darkman.enable = true;
+
+    gtk = {
+      enable = true;
+
+      gtk2 = {
+        extraConfig = ''
+          gtk-application-prefer-dark-theme=1
+        '';
+      };
+
+      gtk3.extraConfig = { gtk-application-prefer-dark-theme = true; };
+
+      gtk4.extraConfig = { gtk-application-prefer-dark-theme = true; };
+
+      iconTheme = {
+        name = "Papirus-Dark";
+        package = pkgs.catppuccin-papirus-folders;
+      };
+
+      cursorTheme = {
+        name = "Catppuccin-Mocha-Dark-Cursors";
+        package = pkgs.catppuccin-cursors.mochaDark;
+        size = 24;
+      };
+
+      theme = {
+        name = "Catppuccin-Mocha-Standard-Blue-Dark";
+        package = pkgs.catppuccin-gtk.override {
+          accents = [ "blue" ];
+          size = "standard";
+          variant = "mocha";
+        };
+      };
+    };
+
+      home.pointerCursor = {
+        gtk.enable = true;
+        package = pkgs.catppuccin-cursors.mochaDark;
+        name = "Catppuccin-Mocha-Dark-Cursors";
+      };
+
+      nix.gc.automatic = true;
 }
