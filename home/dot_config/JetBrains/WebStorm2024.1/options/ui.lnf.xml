@@ -1,8 +1,0 @@
-<application>
-  <component name="KeyboardSettings">
-    <option name="enabled" value="true" />
-  </component>
-  <component name="UISettings">
-    <option name="showTreeIndentGuides" value="true" />
-  </component>
-</application>

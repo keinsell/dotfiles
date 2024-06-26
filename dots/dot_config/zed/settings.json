@@ -1,0 +1,142 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "theme": "Rosé Pine Moon",
+  "buffer_font_family": "Geist Mono",
+  "buffer_line_height": "comfortable",
+  "buffer_font_features": {
+    "calt": true,
+    "ss01": true,
+    "ss02": true
+  },
+  "tab_bar": {
+    "enabled": false,
+    "show_nav_history_buttons": false,
+    "show": false
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 12,
+  "enable_language_server": true,
+  "soft_wrap": "editor_width",
+  "format_on_save": "on",
+  "gutter": {
+    "code_actions": true,
+    "folds": true,
+    "line_numbers": true
+  },
+  "git": {
+    "git_gutter": "tracked_files",
+    "gutter_debounce": 100,
+    "inline_blame": {
+      "enabled": true,
+      "delay_ms": 3000
+    }
+  },
+  "assistant": {
+    "enabled": true,
+    "version": "1"
+  },
+  "show_completion_documentation": true,
+  "show_call_status_icon": true,
+  "show_inline_completions": true,
+  "show_whitespaces": "selection",
+  "show_completions_on_input": true,
+  "centered_layout": {
+    "left_padding": 0.4,
+    "right_padding": 0.4
+  },
+  "inline_completions": {
+    "disabled_globs": []
+  },
+  "active_pane_magnification": 2,
+  "show_wrap_guides": true,
+  "autosave": "on_focus_change",
+  "calls": {},
+  "completion_documentation_secondary_query_debounce": 0,
+  "use_autoclose": true,
+  "current_line_highlight": "gutter",
+  "show_line_numbers": true,
+  "show_indentation_guide": true,
+  "show_invisibles": true,
+  "dev": {
+    "enabled": true
+  },
+  "toolbar": {
+    "enabled": true,
+    "breadcrumbs": true,
+    "quick_actions": true
+  },
+  "preview_tabs": {
+    "enabled": true,
+    "enable_preview_from_file_finder": true,
+    "enable_preview_from_code_navigation": true
+  },
+  "statusbar": {
+    "enabled": true
+  },
+  "always_treat_brackets_as_autoclosed": false,
+  "features": {
+    "inline_completion_provider": "supermaven",
+    "copilot": true
+  },
+  "tabs": {
+    "git_status": true
+  },
+  "use_on_type_format": true,
+  "extend_comment_on_newline": true,
+  "message_editor": {
+    "auto_replace_emoji_shortcode": true
+  },
+  "hover_popover_enabled": true,
+  "ensure_final_newline_on_save": true,
+  "experimental.theme_overrides": {},
+  "inlay_hints": {
+    "enabled": true,
+    "show_other_hints": true,
+    "show_parameter_hints": true,
+    "show_type_hints": true,
+    "edit_debounce_ms": 50,
+    "parameter_hints_debounce_ms": 50
+  },
+  "auto_install_extensions": {},
+  "auto_update_extensions": {},
+  "scrollbar": {
+    "cursors": true,
+    "diagnostics": true,
+    "gutter": true,
+    "horizontal": false,
+    "vertical": true,
+    "search_results": true,
+    "selected_symbol": true,
+    "git_diff": false,
+    "show": "auto"
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "rust": {
+          "analyzerTargetDir": true,
+          "checkOnSave": true,
+          "formatOnType": true,
+          "inlayHints.bindingModeHints.enable": true,
+          "cargo": {
+            "buildScripts": true,
+            "check": true,
+            "clippy": true,
+            "metadata": true,
+            "test": true
+          },
+          "procMacro": {
+            "enable": true
+          }
+        }
+      }
+    }
+  }
+}

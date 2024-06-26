@@ -1,0 +1,18 @@
+[
+   "gcc",
+   "clang",
+   "make",
+   "cmake",
+   "cpio",
+   "meson",
+   "ccache",
+   "aria2",
+   "axel",
+   "python-beautifulsoup4",
+   "nodejs",
+   "rustup",
+   "lldb",
+   "go",
+   "bun",
+   "deno"
+]
