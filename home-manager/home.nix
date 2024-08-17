@@ -94,7 +94,7 @@ in
     pkgs.ktlint
 
     ## Node.js
-    pkgs.nodejs_22
+    pkgs.nodejs
     pkgs.typescript-language-server
     pkgs.pnpm
     pkgs.yarn
@@ -126,7 +126,6 @@ in
     pkgs.rootlesskit
     pkgs.kind
     pkgs.kompose
-    pkgs.oxker
     pkgs.containerd
     pkgs.dockerfile-language-server-nodejs
     pkgs.conmon
@@ -143,7 +142,11 @@ in
     pkgs.bcachefs-tools
     # TODO: Design and implement customized Typography (https://github.com/Jolg42/awesome-typography#fonts)
     (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" "Lilex" ]; })
-    # pkgs.tailscale
+    pkgs.fantasque-sans-mono
+    pkgs.cozette
+
+
+    pkgs.tailscale
 
     # NetworkManager
     # pkgs.gnome.networkmanager-vpnc
@@ -171,12 +174,17 @@ in
     pkgs.difftastic
     pkgs.git-credential-manager
     pkgs.meld
+    pkgs.resources
+    pkgs.gnome-calendar
+    pkgs.gnome-keysign
+    pkgs.cockpit
   ];
 
   home.file = { };
 
   home.sessionVariables = {
     EDITOR = "${pkgs.helix}/bin/hx";
+    TERM = "xterm-256color";
     PNPM_HOME = "/home/keinsell/.cache/pnpm";
     COREPACK_HOME = "/home/keinsell/.cache/corepack";
     # ZELLIJ_AUTO_ATTACH = true;
@@ -203,6 +211,8 @@ in
       settings = {
         gui = {
           lightTheme = true;
+          nerdFontsVersion = "";
+          filterMode = "fuzzy";
         };
         git = {
           paging = {
@@ -304,7 +314,7 @@ in
           ff = true;
           rebase = true;
         };
-        pack = {};
+        pack = { };
         rerere = {
           autoUpdate = true;
           enabled = true;
