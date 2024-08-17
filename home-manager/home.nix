@@ -10,6 +10,7 @@ in
   imports = [
     (sources.catppuccin + "/modules/home-manager")
     # (sources.stylix).homeManagerModules.stylix
+    ./modules/git.nix
     ./modules/helix.nix
     ./modules/common/default.nix
   ];
@@ -35,6 +36,9 @@ in
     pkgs.poppler
     pkgs.fd
     pkgs.fzf
+    pkgs.mods
+    pkgs.gum
+    pkgs.glow
     pkgs.wluma
     pkgs._1password
     pkgs._1password-gui
@@ -136,15 +140,7 @@ in
     pkgs.armcord
     pkgs.spot
     pkgs.psst
-    pkgs.git-town
-    pkgs.git-extras
-    pkgs.git-fame
     pkgs.bcachefs-tools
-    # TODO: Design and implement customized Typography (https://github.com/Jolg42/awesome-typography#fonts)
-    (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" "Lilex" ]; })
-    pkgs.fantasque-sans-mono
-    pkgs.cozette
-
 
     pkgs.tailscale
 
@@ -187,6 +183,7 @@ in
     TERM = "xterm-256color";
     PNPM_HOME = "/home/keinsell/.cache/pnpm";
     COREPACK_HOME = "/home/keinsell/.cache/corepack";
+    PAGER = "${pkgs.glow}/bin/glow";
     # ZELLIJ_AUTO_ATTACH = true;
   };
 
@@ -206,23 +203,6 @@ in
     scmpuff.enable = true;
     urxvt.enable = true;
     watson.enable = true;
-    lazygit = {
-      enable = true;
-      settings = {
-        gui = {
-          lightTheme = true;
-          nerdFontsVersion = "";
-          filterMode = "fuzzy";
-        };
-        git = {
-          paging = {
-            colorArg = "always";
-            useConfig = false;
-            externalDiffCommand = "difft --color=always";
-          };
-        };
-      };
-    };
     rofi.enable = true;
     firefox = {
       enable = true;
@@ -249,86 +229,6 @@ in
       };
     };
     pandoc = { enable = true; };
-
-    git = {
-      package = pkgs.gitAndTools.gitFull;
-      enable = true;
-      userName = "Jakub Olan";
-      userEmail = "keinsell@protonmail.com";
-      aliases = {
-        co = "checkout";
-        ci = "commit";
-        cia = "commit --amend";
-        s = "status";
-        st = "status";
-        b = "branch";
-        p = "pull --rebase";
-        pu = "push";
-      };
-      iniContent = {
-        branch.sort = "-committerdate";
-        rerere.enabled = true;
-        push.autoSetupRemote = true;
-      };
-      ignores = [ "*~" "*.swp" "node_modules" ".direnv" ".cache" ];
-      lfs = {
-        enable = true;
-        skipSmudge = true;
-      };
-      delta = {
-        enable = false;
-        options = {
-          features = "decorations";
-          navigate = true;
-          side-by-side = true;
-        };
-      };
-      difftastic = {
-        enable = false;
-      };
-      extraConfig = {
-        init.defaultBranch = "trunk";
-        merge = {
-          conflictstyle = "diff3";
-          autoStash = true;
-          guitool = "meld";
-        };
-        mergetool = {
-          meld.useAutoMerge = true;
-          keepBackup = true;
-        };
-        interactive = { };
-        diff = {
-          algorithm = "histogram";
-          colorMoved = "default";
-        };
-        credential = {
-
-          credentialStore = "secretservice";
-          cacheOptions = "--timeout 3000";
-          helper = "${pkgs.git-credential-manager}/bin/git-credential-manager";
-        };
-        core.editor = "helix";
-        protocol.keybase.allow = "always";
-        pull = {
-          ff = true;
-          rebase = true;
-        };
-        pack = { };
-        rerere = {
-          autoUpdate = true;
-          enabled = true;
-        };
-        rebase = {
-          autoStash = true;
-        };
-        extensions = {
-          refStorage = "reftable";
-        };
-        feature.experimental = true;
-      };
-    };
-
     zoxide = {
       enable = true;
       options = [ "--cmd cd" ];
@@ -371,7 +271,6 @@ in
     notmuch = { enable = false; };
     broot.enable = true;
     carapace.enable = true;
-
     starship = {
       enable = true;
       settings = {
@@ -465,6 +364,7 @@ in
     yt-dlp = {
       enable = true;
     };
+    taskwarrior = {enable = true;};
   };
 
 
@@ -495,28 +395,6 @@ in
     pointerCursor.enable = false;
   };
 
-
-  gtk = {
-    enable = true;
-
-    gtk2 = {
-      extraConfig = ''
-        gtk-application-prefer-dark-theme=1
-      '';
-    };
-
-    gtk3.extraConfig = { gtk-application-prefer-dark-theme = true; };
-    gtk4.extraConfig = { gtk-application-prefer-dark-theme = true; };
-
-    iconTheme = {
-      name = "Tela-purple-dark";
-      package = pkgs.tela-icon-theme;
-    };
-    theme = {
-      name = "Dracula";
-      package = pkgs.dracula-theme;
-    };
-  };
   dconf.enable = true;
   systemd = {
     # user.startServices = "sd-switch";

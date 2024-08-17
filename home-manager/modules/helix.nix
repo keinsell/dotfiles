@@ -4,7 +4,7 @@
   programs.helix = {
     enable = true;
     settings = {
-      theme = "catppuccin_macchiato";
+      theme = "catppuccin_mocha";
       editor = {
         line-number = "relative";
         mouse = true;
@@ -27,7 +27,7 @@
           git-ignore = false;
           git-exclude = false;
           git-global = true;
-          max-depth = 8;
+          max-depth = 4;
         };
         indent-guides = {
           render = true;
@@ -45,7 +45,7 @@
         };
         auto-completion = true;
         auto-format = true;
-        completion-replace = false;
+        completion-replace = true;
         auto-save = {
           focus-lost = true;
           after-delay.enable = true;
@@ -72,10 +72,10 @@
         # https://github.com/typescript-language-server/typescript-language-server
         typescript-language-server = {
           command = "typescript-language-server";
-          args = [ "--stdio" ];
+          # args = [ "--stdio" ];
           config = {
             hostInfo = "helix";
-            completionDisableFilterText = false;
+            completionDisableFilterText = true;
             tsserver = {
               useSyntaxServer = "auto";
               implicitProjectConfig = {
@@ -84,7 +84,7 @@
                 checkJs = true;
                 strictNullChecks = true;
                 experimentalDecorators = true;
-                useLocalTsdk = false;
+                useLocalTsdk = true;
               };
               experimental = {
                 enableProjectDiagnostics = true;
@@ -177,6 +177,8 @@
         }
         {
           name = "typescript";
+          file-types = ["ts"];
+          roots = ["tsconfig.json" "package.json"];
           language-servers = [
             {
 
@@ -185,7 +187,6 @@
             }
             "biome"
           ];
-          roots = [ "tsconfig.json" ];
           auto-format = true;
         }
         {
@@ -246,7 +247,6 @@
       statix
       bash-language-server
       typst-live
-      diagnostic-languageserver
       texlab
       nixpkgs-fmt
       nil
@@ -300,6 +300,7 @@
       vscode-langservers-extracted
       nodePackages.eslint
       eslint_d
+      diagnostic-languageserver
     ];
 
     ignores = [
