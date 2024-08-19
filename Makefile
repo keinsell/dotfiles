@@ -25,7 +25,7 @@ install_hm:
 .PHONY: link-all
 
 alacritty:
-	stow --verbose --target=$$HOME --dotfiles --adopt alacritty
+	stow --verbose --target=$$HOME --dotfiles --restow alacritty
 
 
 # Link will create symlinks to dotfiles from repository

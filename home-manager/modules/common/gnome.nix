@@ -22,7 +22,11 @@
     pkgs.gnome-desktop
     pkgs.nautilus
     pkgs.mission-center
+    pkgs.evolution
+    pkgs.resources
+    pkgs.gnome-contacts
   ];
+
   dconf.settings = {
     "org/gnome/mutter" = {
       experimental-features = [

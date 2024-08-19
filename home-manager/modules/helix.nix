@@ -177,8 +177,8 @@
         }
         {
           name = "typescript";
-          file-types = ["ts"];
-          roots = ["tsconfig.json" "package.json"];
+          file-types = [ "ts" ];
+          roots = [ "tsconfig.json" "package.json" ];
           language-servers = [
             {
 
@@ -243,8 +243,10 @@
     # to just install everything that I'm using.
 
     extraPackages = with pkgs; [
+      efm-langserver
       autotools-language-server
       statix
+      deadnix
       bash-language-server
       typst-live
       texlab

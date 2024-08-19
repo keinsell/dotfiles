@@ -17,6 +17,9 @@
         builtins.elem (lib.getName pkg) [
           "joypixels"
         ];
+      permittedInsecurePackages = [
+        "electron-27.3.11"
+      ];
       input-fonts.acceptLicense = true;
       joypixels.acceptLicense = true;
       packageOverrides = pkgs: {
