@@ -1,2 +1,0 @@
-- [ ] Add [stylix](https://github.com/danth/stylix/) module for customizing GNOME environment and color schemes.
-- [ ] Research [xhmm](https://github.com/schuelermine/xhmm).

@@ -1,0 +1,95 @@
+[alias]
+	b = "branch"
+	ci = "commit"
+	cia = "commit --amend"
+	co = "checkout"
+	p = "pull --rebase"
+	pu = "push"
+	s = "status"
+	st = "status"
+
+[branch]
+	sort = "-committerdate"
+
+[commit]
+	gpgSign = true
+
+[core]
+	editor = "helix"
+
+[credential]
+	cacheOptions = "--timeout 3000"
+	credentialStore = "secretservice"
+	helper = "git-credential-manager"
+
+[credential "https://gist.github.com"]
+	helper = "gh auth git-credential"
+
+[credential "https://github.com"]
+	helper = "gh auth git-credential"
+
+[diff]
+	algorithm = "histogram"
+	colorMoved = "default"
+	external = "difft --color auto --background light --display side-by-side"
+
+[extensions]
+	refStorage = "reftable"
+
+[feature]
+	experimental = true
+
+[filter "lfs"]
+	clean = "git-lfs clean -- %f"
+	process = "git-lfs filter-process --skip"
+	required = true
+	smudge = "git-lfs smudge --skip -- %f"
+
+[gpg]
+	program = "gpg2"
+
+[init]
+	defaultBranch = "trunk"
+
+[merge]
+	autoStash = true
+	conflictstyle = "diff3"
+	guitool = "meld"
+
+[mergetool]
+	keepBackup = true
+
+[mergetool "meld"]
+	useAutoMerge = true
+
+[protocol "keybase"]
+	allow = "always"
+
+[pull]
+	ff = true
+	rebase = true
+
+[push]
+	autoSetupRemote = true
+
+[rebase]
+	autoStash = true
+
+[rerere]
+	autoUpdate = true
+	enabled = true
+
+[sendemail "keinsell@protonmail.com"]
+	from = "Jakub Olan <keinsell@protonmail.com>"
+	smtpEncryption = ""
+	smtpServer = "127.0.0.1"
+	smtpServerPort = 1025
+	smtpUser = "keinsell@protonmail.com"
+
+[tag]
+	gpgSign = true
+
+[user]
+	email = "keinsell@protonmail.com"
+	name = "Jakub Olan"
+	signingKey = "FB2ECA8D791435DC683D80D1402D2364DA7CA536"

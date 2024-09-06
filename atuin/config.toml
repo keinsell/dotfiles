@@ -60,7 +60,7 @@
 
 ## which style to use
 ## possible values: auto, full, compact
-# style = "auto"
+style = "compact"
 
 ## the maximum number of lines the interface should take up
 ## set it to 0 to always go full screen
@@ -71,7 +71,7 @@
 
 ## enable or disable showing a preview of the selected command
 ## useful when the command is longer than the terminal width and is cut off
-# show_preview = true
+show_preview = false
 
 ## what to do when the escape key is pressed when searching
 ## possible values: return-original, return-query
@@ -116,26 +116,14 @@
 ## Useful when you have long scripts in your history that you want to distinguish
 ## by more than the first few lines.
 # max_preview_height = 4
-
-## Configure whether or not to show the help row, which includes the current Atuin
-## version (and whether an update is available), a keymap hint, and the total
-## amount of commands in your history.
-# show_help = true
-
-## Configure whether or not to show tabs for search and inspect
-# show_tabs = true
-
-## Defaults to true. This matches history against a set of default regex, and will not save it if we get a match. Defaults include
-## 1. AWS key id
-## 2. Github pat (old and new)
-## 3. Slack oauth tokens (bot, user)
-## 4. Slack webhooks
-## 5. Stripe live/test keys
-# secrets_filter = true
+#
+show_help = false
+show_tabs = false
+secrets_filter = true
 
 ## Defaults to true. If enabled, upon hitting enter Atuin will immediately execute the command. Press tab to return to the shell and edit.
 # This applies for new installs. Old installs will keep the old behaviour unless configured otherwise.
-enter_accept = true
+enter_accept = false
 
 ## Defaults to "emacs".  This specifies the keymap on the startup of `atuin
 ## search`.  If this is set to "auto", the startup keymap mode in the Atuin
@@ -188,11 +176,7 @@ enter_accept = true
 # common_prefix = ["sudo"]
 
 ## Set commands that will be completely ignored from stats
-# ignored_commands = [
-#   "cd",
-#   "ls",
-#   "vi"
-# ]
+ignored_commands = ["cd", "ls", "vi", "hx", "helix", "zeditor"]
 
 [keys]
 # Defaults to true. If disabled, using the up/down key won't exit the TUI when scrolled past the first/last entry.
@@ -205,15 +189,10 @@ enter_accept = true
 records = true
 
 [preview]
-## which preview strategy to use to calculate the preview height (respects max_preview_height).
-## possible values: auto, static
-## auto: length of the selected command.
-## static: length of the longest command stored in the history.
-# strategy = "auto"
+strategy = "auto"
 
 [daemon]
-## Enables using the daemon to sync. Requires the daemon to be running in the background. Start it with `atuin daemon`
-# enabled = false
+enabled = false
 
 ## How often the daemon should sync in seconds
 # sync_frequency = 300
