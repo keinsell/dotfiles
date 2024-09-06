@@ -1,4 +1,0 @@
-eval "$(zoxide init zsh)"
-eval "$(atuin init zsh)"
-
-echo "Hi from ZSH"
