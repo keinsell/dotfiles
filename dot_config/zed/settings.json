@@ -1,50 +1,51 @@
 {
-	"ui_font_size": 12,
-	"buffer_font_size": 12,
-	"autosave": "on_focus_change",
-	"load_direnv": "shell_hook",
-	"inline_completions": {
-		"disabled_globs": [".env"]
-	},
-	"current_line_highlight": "all",
-	"buffer_font_family": "FantasqueSansM Nerd Font Mono",
-	"features": { "copilot": true, "inline_completion_provider": "copilot" },
-	"linked_edits": true,
-	"experimental.context_servers": { "servers": [] },
-	"auto_install_extensions": {},
-	"theme": {
-		"mode": "system",
-		"light": "Catppuccin Mocha",
-		"dark": "Catppuccin Mocha (Blur)"
-	},
-	"auto_update_extensions": {},
-	"scrollbar": {
-		"show": "auto",
-		"cursors": true,
-		"git_diff": true,
-		"search_results": true,
-		"selected_symbol": true,
-		"diagnostics": true
-	},
-	"tab_bar": {
-		"show": false,
-		"show_nav_history_buttons": true
-	},
-	"inlay_hints": {
-		"enabled": true,
-		"show_type_hints": true,
-		"show_parameter_hints": true,
-		"show_other_hints": true,
-		"edit_debounce_ms": 700,
-		"scroll_debounce_ms": 50
-	},
-	"format_on_save": "on",
-	"enable_preview_from_code_navigation": true,
-	"preview": { "unnecessary_code_fade": 0.5 },
-
-	"hard_tabs": true,
-	"toolbar": {
-		"breadcrumbs": true,
-		"quick_actions": true
-	}
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "buffer_font_family": "scientifica",
+  "ui_font_family": "scientifica",
+  "active_pane_magnification": 0.3,
+  "theme": {
+    "mode": "system",
+    "light": "Rosé Pine",
+    "dark": "Rosé Pine Moon"
+  },
+  "autosave": "on_focus_change",
+  "load_direnv": "shell_hook",
+  "inline_completions": {
+    "disabled_globs": [".env"]
+  },
+  "current_line_highlight": "all",
+  "features": { "copilot": true, "inline_completion_provider": "copilot" },
+  "linked_edits": true,
+  "experimental.context_servers": { "servers": [] },
+  "auto_install_extensions": {},
+  "auto_update_extensions": {},
+  "scrollbar": {
+    "show": "auto",
+    "cursors": true,
+    "git_diff": true,
+    "search_results": true,
+    "selected_symbol": true,
+    "diagnostics": true
+  },
+  "tab_bar": {
+    "show": false,
+    "show_nav_history_buttons": true
+  },
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true,
+    "edit_debounce_ms": 700,
+    "scroll_debounce_ms": 50
+  },
+  "format_on_save": "on",
+  "enable_preview_from_code_navigation": true,
+  "preview": { "unnecessary_code_fade": 0.5 },
+  "hard_tabs": true,
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": true
+  }
 }

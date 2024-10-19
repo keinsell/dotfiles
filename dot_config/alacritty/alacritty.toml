@@ -13,12 +13,12 @@ padding.y = 15
 
 [font]
 # fc-list: family style | grep "Cozette"
-size = 8
+size = 16
 
 [font.normal]
 # family = "JetBrains Mono"
 # family = "Scientifica"
-family = "Cozette"
+family = "scientifica"
 # family = "Tamzen"
 style = "Regular"
 
