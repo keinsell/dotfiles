@@ -1,0 +1,25 @@
+theme = "fleet_dark"
+
+[editor]
+line-number = "relative"
+mouse = false
+cursorline = true
+true-color = true
+color-modes = true
+end-of-line-diagnostics = "hint"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.lsp]
+display-progress-messages = true
+display-inlay-hints = true
+
+[editor.auto-save]
+focus-lost = true
+
+[editor.soft-wrap]
+enable = true
+wrap-at-text-width = true
