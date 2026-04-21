@@ -1,51 +1,115 @@
 {
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
-  "buffer_font_family": "scientifica",
-  "ui_font_family": "scientifica",
-  "active_pane_magnification": 0.3,
-  "theme": {
-    "mode": "system",
-    "light": "Rosé Pine",
-    "dark": "Rosé Pine Moon"
-  },
-  "autosave": "on_focus_change",
-  "load_direnv": "shell_hook",
-  "inline_completions": {
-    "disabled_globs": [".env"]
-  },
-  "current_line_highlight": "all",
-  "features": { "copilot": true, "inline_completion_provider": "copilot" },
-  "linked_edits": true,
-  "experimental.context_servers": { "servers": [] },
-  "auto_install_extensions": {},
-  "auto_update_extensions": {},
-  "scrollbar": {
-    "show": "auto",
-    "cursors": true,
-    "git_diff": true,
-    "search_results": true,
-    "selected_symbol": true,
-    "diagnostics": true
-  },
-  "tab_bar": {
-    "show": false,
-    "show_nav_history_buttons": true
-  },
-  "inlay_hints": {
-    "enabled": true,
-    "show_type_hints": true,
-    "show_parameter_hints": true,
-    "show_other_hints": true,
-    "edit_debounce_ms": 700,
-    "scroll_debounce_ms": 50
-  },
-  "format_on_save": "on",
-  "enable_preview_from_code_navigation": true,
-  "preview": { "unnecessary_code_fade": 0.5 },
-  "hard_tabs": true,
-  "toolbar": {
-    "breadcrumbs": true,
-    "quick_actions": true
+	"unnecessary_code_fade": 0.9,
+ "colorize_brackets": true,
+ "lsp_document_colors": "inlay",
+ "indent_guides": {
+  "background_coloring": "indent_aware",
+  "coloring": "indent_aware"
+ },
+ "soft_wrap": "preferred_line_length",
+ "icon_theme": {
+  "mode": "system",
+  "light": "Zed (Default)",
+  "dark": "Zed (Default)"
+ },
+ "relative_line_numbers": "enabled",
+ "show_signature_help_after_edits": true,
+ "auto_signature_help": true,
+ "diagnostics": {
+  "inline": {
+   "enabled": true
   }
+ },
+ "prettier": {
+  "allowed": true
+ },
+ "document_symbols": "on",
+ "document_folding_ranges": "on",
+ "semantic_tokens": "combined",
+ "preview_tabs": {
+  "enable_preview_from_file_finder": true
+ },
+ "title_bar": {
+  "show_menus": false,
+  "show_branch_icon": true
+ },
+ "project_panel": {
+  "hide_root": true,
+  "hide_hidden": false,
+  "git_status_indicator": true,
+  "diagnostic_badges": true,
+  "entry_spacing": "standard",
+  "hide_gitignore": true
+ },
+ "terminal": {
+  "toolbar": {
+   "breadcrumbs": true
+  }
+ },
+ "git": {
+  "inline_blame": {
+   "show_commit_summary": true
+  }
+ },
+ "agent": {
+  "default_model": {
+   "provider": "deepseek",
+   "model": "deepseek-chat",
+   "enable_thinking": false
+  },
+  "show_turn_stats": true,
+  "play_sound_when_agent_done": "always",
+  "favorite_models": [],
+  "model_parameters": [],
+  "tool_permissions": {
+   "default": "allow",
+   "tools": {}
+  }
+ },
+ "ui_font_size": 16,
+	"buffer_font_size": 11.0,
+	"buffer_font_family": "JetBrains Mono",
+	"ui_font_family": "scientifica",
+	"theme": {
+		"mode": "system",
+		"light": "Base16 standardized-light",
+		"dark": "Xcode Classic Dark",
+	},
+	"autosave": "on_focus_change",
+	"load_direnv": "shell_hook",
+	"edit_predictions": {
+		"provider": "copilot",
+		"disabled_globs": [".env"],
+	},
+	"current_line_highlight": "line",
+	"linked_edits": true,
+	"auto_install_extensions": {},
+	"auto_update_extensions": {},
+	"scrollbar": {
+		"show": "auto",
+		"cursors": true,
+		"git_diff": true,
+		"search_results": true,
+		"selected_symbol": true,
+		"diagnostics": "all",
+	},
+	"tab_bar": {
+		"show": false,
+		"show_nav_history_buttons": true,
+	},
+	"inlay_hints": {
+		"enabled": true,
+		"show_type_hints": true,
+		"show_parameter_hints": true,
+		"show_other_hints": true,
+		"edit_debounce_ms": 700,
+		"scroll_debounce_ms": 50,
+	},
+	"format_on_save": "on",
+	"preview": { "unnecessary_code_fade": 0.5 },
+	"hard_tabs": true,
+	"toolbar": {
+		"breadcrumbs": true,
+		"quick_actions": true,
+	},
 }
